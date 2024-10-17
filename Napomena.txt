@@ -1,0 +1,10 @@
+1. auth i authGym: Kada u postmanu za neki request (npr. logout) nisam u Header dodao Authorization
+vraca se error:
+ {
+    "error": "Cannot read properties of undefined (reading 'replace')"
+}
+
+Ovaj error ne bi bilo ok da se prikaze korisniku. Zato treba dodati proveru u auth i authGym da 
+li postoji Authorization.
+
+2. /
